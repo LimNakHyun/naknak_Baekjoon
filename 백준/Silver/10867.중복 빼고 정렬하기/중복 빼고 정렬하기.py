@@ -1,0 +1,5 @@
+n=int(input())
+n_list=list(map(int,input().split()))
+s_list=set(n_list)
+res=list(s_list)
+print(' '.join(str(i) for i in sorted(res)))
