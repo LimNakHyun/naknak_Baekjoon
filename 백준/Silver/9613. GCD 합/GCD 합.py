@@ -3,7 +3,7 @@ def gcd(m,n):
     if m%n==0:return n
     return gcd(n,m%n)
 
-for i in range(int(input())):
+for _ in range(int(input())):
     _sum=0
     m,*arr=map(int,input().split())
     for j in range(m):
