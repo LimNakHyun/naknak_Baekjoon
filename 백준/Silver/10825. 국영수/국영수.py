@@ -1,13 +1,8 @@
-a=[]
-for _ in range(int(input())):
-    a.append(input().split())
+import sys
+input=sys.stdin.readline
 
+a=[list(input().strip().split()) for _ in range(int(input()))]
 for ls in a:
-    ls[1]=int(ls[1])
-    ls[2]=int(ls[2])
-    ls[3]=int(ls[3])
-
+    for i in range(1,4):ls[i]=int(ls[i])
 a.sort(key=lambda x:(-x[1],x[2],-x[3],x[0]))
-
-for ls in a:
-    print(ls[0])
+for ls in a:print(ls[0])
