@@ -20,10 +20,7 @@ for _ in range(int(input())):
         elif func=='R':
             rev=rev+1
         else:
-            if rev%2==0:
-                dq.popleft()
-            else:
-                dq.pop()
+            dq.popleft() if rev%2==0 else dq.pop()
 
     if rev%2!=0:dq.reverse()
 
