@@ -13,14 +13,13 @@ for _ in range(int(input())):
     
     rev=0
     dcount=funcs.count('D')
-    continu=True
 
     for func in funcs:
         if len(dq)==0:
             break
         elif func=='R':
             rev=rev+1
-        elif func=='D':
+        else:
             if rev%2==0:
                 dq.popleft()
             else:
