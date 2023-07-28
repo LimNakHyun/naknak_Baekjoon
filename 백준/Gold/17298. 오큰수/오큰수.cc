@@ -35,12 +35,8 @@ int main()
                     if (stk.empty()) break;
                     else temp_top = stk.top().second;
                 }
-                stk.push(Node(i, now));
             }
-            else
-            {
-                stk.push(Node(i, now));
-            }
+            stk.push(Node(i, now));
         }
     }
 
