@@ -14,17 +14,15 @@ int main()
     
     for (int i=0; i<str.size(); i++)
     {
-        int max = -1;
-        int maxIdx;
+        int maxIdx = i+1;
         for (int j=i+1; j<str.size(); j++)
         {
-            if (A[j] > max)
+            if (A[j] > A[maxIdx])
             {
-                max = A[j];
                 maxIdx = j;
             }
         }
-        if (max > A[i])
+        if (A[maxIdx] > A[i])
         {
             int temp = A[maxIdx];
             A[maxIdx] = A[i];
