@@ -2,11 +2,10 @@
 
 int main()
 {
-    using namespace std;
-    
     int A, B;
-    cin >> A >> B;
-    cout << A + B;
+    std::cin >> A >> B;
+    
+    std::cout << A + B;
     
     return 0;
 }
